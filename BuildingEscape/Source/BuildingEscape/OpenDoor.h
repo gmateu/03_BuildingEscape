@@ -21,7 +21,7 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	void OpenDoor();
+	void OpenDoor(float);
 
 public:	
 	// Called every frame
@@ -32,7 +32,7 @@ private:
 		float angle = 90.f;
 	UPROPERTY(EditAnywhere)
 		ATriggerVolume* PressurePlate;
-	UPROPERTY(EditAnywhere)
+	
 		AActor* ActorThatOpens; //remember pawn inherit from actor
 		
 	
