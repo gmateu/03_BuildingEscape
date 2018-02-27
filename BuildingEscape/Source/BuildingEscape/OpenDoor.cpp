@@ -41,7 +41,6 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	//Poll the trigger volumen
 	if (PressurePlate->IsOverlappingActor(ActorThatOpens)) {
-		UE_LOG(LogTemp, Warning, TEXT("tick"));
 		OpenDoor();
 		LastDoorOpenTime= GetWorld()->GetTimeSeconds();
 	}
